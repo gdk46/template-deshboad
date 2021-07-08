@@ -1,0 +1,28 @@
+/**
+ *---------------------------------------------------------
+ *  Description : General system imports
+ *  Version     : 1.0.0
+ *---------------------------------------------------------
+ *
+ * 1. SETTINGS
+ * 2. COMPONENTS
+ *   2.0. SIDEBAR
+ *   2.1. HEADER
+ *   2.2. MAIN
+ *
+ */
+
+
+/*------------------------------------------------------
+    1. ROOT SETTINGS
+*-------------------------------------------------------*/
+@import url('setting/setting.css');
+
+
+/*------------------------------------------------------
+    2. COMPONENTS
+*-------------------------------------------------------*/
+@import url('components/sidebar.css');
+@import url('components/header.css');
+@import url('components/main.css');
+@import url('components/card.css');

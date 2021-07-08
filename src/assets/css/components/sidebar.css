@@ -1,0 +1,128 @@
+.sidebar {
+  font-family: var(--primary-font);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: var(--primary-color);
+  width: 70px;
+  border-left: 5px solid var(--primary-color);
+  transition: .5s;
+  overflow-x: hidden;
+  z-index: var(--z-fixed);
+}
+
+.sidebar.sidebar-active {
+  width: 250px;
+}
+
+.sidebar ul.sidebar-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-brand {
+  position: relative;
+  width: 100%;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item {
+  position: relative;
+  width: 100%;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item span.outside-top {
+  position: absolute;
+  top: -10px;
+  background: var(--white-color);
+  height: 10px;
+  width: 100%;
+  display: none;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item span.outside-top::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item span.outside-bottom {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  background: var(--white-color);
+  height: 10px;
+  width: 100%;
+  display: none;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item span.outside-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  background: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item.item-active
+{
+  background-color: var(--white-color);
+  border-top-left-radius: var(--border-r-20);
+  border-bottom-left-radius: var(--border-r-20);
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item.item-active span.outside-top,
+.sidebar ul.sidebar-list li.sidebar-list-item.item-active span.outside-bottom
+{
+  display: block;
+}
+.sidebar ul.sidebar-list li.sidebar-list-brand a.list-item-content,
+.sidebar ul.sidebar-list li.sidebar-list-item a.list-item-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  color: var(--white-color);
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item.item-active a.list-item-content {
+  color: var(--primary-color);
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-brand a.list-item-content span.item-content-icon,
+.sidebar ul.sidebar-list li.sidebar-list-item a.list-item-content span.item-content-icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-item a.list-item-content span.item-content-icon i {
+  font-size: 1.5rem;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-brand a.list-item-content span.item-content-title,
+.sidebar ul.sidebar-list li.sidebar-list-item a.list-item-content span.item-content-title {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 65px;
+  padding-left: 10px;
+  white-space: normal;
+}
+
+.sidebar ul.sidebar-list li.sidebar-list-brand a.list-item-content span.item-content-title {
+  font-weight: 600;
+}

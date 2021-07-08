@@ -1,0 +1,7 @@
+.card-title {
+    color: var(--primary-color);
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+}

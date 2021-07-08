@@ -1,0 +1,9 @@
+#container {
+    width: 100%;
+    border: none;
+}
+
+#container > .card-body {
+    flex: 1 1 auto;
+    padding: 5rem 6rem;
+}

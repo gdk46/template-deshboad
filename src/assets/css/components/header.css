@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--white-color-light);
+  z-index: var(--z-fixed);
+  transition: .5s;
+  padding-left: 90px;
+}
+
+.header-toggle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.header-toggle.toggle-active {
+  padding-left: 180px;
+}
+
+.header-toggle #close,
+.header-toggle.toggle-active #open {
+  display: none;
+}
+
+.header-toggle.toggle-active #close {
+  display: block;
+}

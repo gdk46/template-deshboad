@@ -1,0 +1,16 @@
+:root {
+    --header-height: 3rem;
+    --nav-width: 70px;
+
+    --primary-color: #4723D9;
+    --primary-color-light: #007045;
+    --white-color: #ffffff;
+    --white-color-light: #F7F6FB;
+    --black-color: #141718;
+
+    --primary-font: 'Poppins', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+
+    --border-r-20: 20px;
+    --z-fixed: 100;
+}

@@ -27,9 +27,7 @@
     <!-- END FONT -->
 </head>
 <body id="root">
-    <!-- {{header}} -->
-    <!-- {{sidebar}} -->
-    <!-- {{container}} -->
+    <!-- {{login}} -->
      
     
     <!-- Separate Popper and Bootstrap JS -->
@@ -59,14 +57,18 @@
         }
 
         function main(){
-          requestComponent("./src/components/header/header-component.html", "<!-- {{header}} -->");
+          requestComponent("./src/components/login/login-component.html", "<!-- {{login}} -->");
+        };
+
+        function login() {
+          /* requestComponent("./src/components/header/header-component.html", "<!-- {{header}} -->");
           requestComponent("./src/components/sidebar/sidebar-component.html", "<!-- {{sidebar}} -->");
           requestComponent("./src/components/container/container-component.html", "<!-- {{container}} -->");
           setTimeout(requestComponent(
             "./src/components/home/home-component.html", "<!-- {{page}} -->"),
             1000
-          );
-        };
+          ); */
+        }
 
         main(); 
       });

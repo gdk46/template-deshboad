@@ -1,0 +1,47 @@
+#login {
+    background-color: #F7F6FB;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+#login #card-login {
+    width: 300px;
+    border-radius: 20px;
+}
+
+@media (min-width: 420px){
+    #login #card-login {
+        width: 320px;
+        border-radius: 20px;
+    }
+}
+
+#login #card-login .btn-primay-layout {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+#login #card-login form input,
+#login #card-login form button {
+    border-radius: 15px;
+}
+
+
+#login #card-login form input:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+
+#login #card-login a {
+    color: var(--primary-color);
+}
+
+#login #card-login  {
+    color: var(--primary-color);
+}
+
+#login .copyright {
+    color: #858585;
+}
